@@ -1,0 +1,32 @@
+img {
+  width: 100%;
+}
+
+body
+{
+  background-image: url("images/MorteAnunciadaCapa.jpg");
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    font-size: x-large;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+.maintitle {
+  font-family: blippo;
+  font-size: 150px;
+  text-align: center;
+  color: orange;
+  position: absolute;
+    top: 30%;
+    left: 20%;
+
+}
