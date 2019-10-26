@@ -5,6 +5,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="portfolio.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body> 
 
@@ -41,10 +42,38 @@
       <p>Petrus Castrus was a progressive rock band from Portugal that released two albums, Mestre (1973) and Ascenção e Queda (1978). </p> 
   <p>Mestre was banned soon after its release for controversial lyrics speaking against the current establishment. The album is now regarded as a highly influential underground progressive gem.</p> 
  
+
+ 
   </div>
-  <div class="col-sm-6 bg-light"> <img src="images/photo1.png" alt="Italian Trulli"> </div>
+  <div class="col-sm-6 bg-light"> <img src="images/photo1.png" alt="Italian Trulli">  </div>
+  
   </div>
+  
+  <div class="row mx-lg-n5">
+    <div class="col-sm py-3 px-lg-5 bg-light">
+  <div id="app">
+              <!--<button click="searchSimilarArtists">Search</button>-->
+              <p v-on:mouseover="searchSimilarArtists">Similar artists: </p> 
+               <li v-for="item in similarartists">
+                
+                
+                <a v-bind:href="item.url">{{ item.name }}</a>
+                </li>
+              <br>
+              <br>
+                            <br>
+              <br>
+
+            
+            
+              
+    </div>
+     </div>
+      </div>
+  
 </div>
+
+
 
 
 
@@ -55,6 +84,9 @@
   <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:2ZKSaQL60bkndwDOBbySb9&size=detail&theme=dark&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 </nav>
 
+
+<script src="script.js"></script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
