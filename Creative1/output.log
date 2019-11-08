@@ -1,0 +1,10 @@
+nohup: ignoring input
+Client connected...
+Hello server from client
+rror' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event at:
+    at lazyFs.read (internal/fs/streams.js:165:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:467:17)
